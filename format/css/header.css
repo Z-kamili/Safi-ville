@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$title".
-        on line 26 of sass/header.scss
+        on line 31 of sass/header.scss
 
-21:             }
-22:             h1{
-23:                 font-family: 'Claytonia';
-24:                 font-size: 40px;
-25:                 float: left;
-26:                 color: $title;
-27:                 
-28:             }
-29:             nav{
-30:                 float: right;
-31:                 margin: 15px;
+26:             }
+27:             h1{
+28:                 font-family: 'Claytonia';
+29:                 font-size: 40px;
+30:                 float: left;
+31:                 color: $title;
+32:                 
+33:             }
+34:             nav{
+35:                 float: right;
+36:                 margin: 15px;
 
 Backtrace:
-sass/header.scss:26
+sass/header.scss:31
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$title\".\A         on line 26 of sass/header.scss\A \A 21:             }\A 22:             h1{\A 23:                 font-family: 'Claytonia';\A 24:                 font-size: 40px;\A 25:                 float: left;\A 26:                 color: $title;\A 27:                 \A 28:             }\A 29:             nav{\A 30:                 float: right;\A 31:                 margin: 15px;"; }
+  content: "Error: Undefined variable: \"$title\".\A         on line 31 of sass/header.scss\A \A 26:             }\A 27:             h1{\A 28:                 font-family: 'Claytonia';\A 29:                 font-size: 40px;\A 30:                 float: left;\A 31:                 color: $title;\A 32:                 \A 33:             }\A 34:             nav{\A 35:                 float: right;\A 36:                 margin: 15px;"; }

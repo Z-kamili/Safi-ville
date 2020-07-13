@@ -80,12 +80,33 @@ main{
                    .image{
                       width: 90%;
                       height: 400px;
+                      transition: 1s cubic-bezier(.5,0,0,1);
+ &:hover{
+     transform: scale(1.2);
+     transition: 1s cubic-bezier(.5,0,0,1);
+ }
                     }
+
                 }
     }
  
  
 }
+
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.reveal-visible{
+    // width: 80%;
+    opacity:1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5,0,0,1);
+}
+.reveal-image{
+    width: 80%;
+}
+
 .city-safi{
     text-align: center;
 
@@ -221,7 +242,7 @@ main{
             .cart-image{
                 width: 100%;
                 height: 50%;
-                background-image: url("../img/img1.png");
+                background-image: url("../img/pottery.png");
                 background-position: center;
                 background-size: cover;
                 .icon-player{
@@ -257,6 +278,40 @@ main{
 /*Safi-video*/
 section{
     // height: 200px;
+    h1{
+        text-align: center;
+        font-family: $fonts;
+        color: $bg_btn_color;
+        font-size: 57px;
+
+    }
+    .bg-chateau{
+        background-image: url("../img/chateau_mere.png");
+                background-position: center;
+                background-size: cover;
+                width:80%;
+                height: 606px;
+                margin: auto;
+
+    }
+    .icon-player-2{
+        position:absolute;
+    top:45%;
+    left:45%;
+    width: 104px;
+    }
+    .icon-player-2{
+        cursor: pointer;
+    }
+    #img-bg-2{
+        width: 100%;
+        height: 100%;
+    }
+    .bg-image-slider{
+        width: 50%;
+        margin: auto;
+        
+    }
     .Safi-video{
         width: 80%;
         margin: auto;
@@ -264,7 +319,7 @@ section{
         .bg-image{
                 width: 591px;
                 height: 437px;
-                background-image: url("../img/videochat.png");
+                background-image: url("../img/chateau_mere.png");
                 background-position: center;
                 background-size: cover;
                 .icon-player{
@@ -325,7 +380,7 @@ section{
         .bg-image{
             width: 40%;
              height: 674px;
-             background-image: url("../img/tajine.png");
+             background-image: url("../img/tof.png");
              background-position: center;
              background-size: cover;
  }
@@ -500,6 +555,7 @@ main{
               width: 90%;
               height: 400px;
             }
+           
         }
      
     }
@@ -698,6 +754,31 @@ main{
     /*Safi-video*/
     section{
         // height: 200px;
+        h1{
+            text-align: center;
+            font-family: $fonts;
+            color: $bg_btn_color;
+            font-size: 40px;
+    
+        }
+        .bg-chateau{
+            background-image: url("../img/chateau_mere.png");
+                    background-position: center;
+                    background-size: cover;
+                    width:80%;
+                    height: 354px;
+                    margin: auto;
+    
+        }
+        .icon-player-2{
+            position:absolute;
+        top:45%;
+        left:45%;
+        width: 44px;
+        }
+        .icon-player-2:hover{
+            cursor: pointer;
+        }
         .Safi-video{
             width: 80%;
             margin: auto;
@@ -777,7 +858,7 @@ main{
             .bg-image{
                 width: 281px;
                 height: 320px;
-                 background-image: url("../img/tajine.png");
+                 background-image: url("../img/tof.png");
                  background-position: center;
                  background-size: cover;
                  margin: auto;
@@ -1187,7 +1268,7 @@ main{
                         margin: auto;
                         .btn{
                             margin: auto;
-                            width: 100%;
+                            width: 107%;
                             input{
                                 width: 46%;
                                 background-color:$bg_btn_color ;
@@ -1229,7 +1310,7 @@ main{
                 .bg-image{
                     width: 240px;
                     height: 320px;
-                     background-image: url("../img/tajine.png");
+                     background-image: url("../img/tof.png");
                      background-position: center;
                      background-size: cover;
                      margin: auto;

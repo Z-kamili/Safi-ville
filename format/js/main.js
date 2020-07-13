@@ -2,8 +2,9 @@
 //     alert('Hello!')
 //   });
 
+ /*animation*/
 
-
+let video = document.getElementById('video');
 
 document.getElementById("img-bg").addEventListener("click",()=>{
     window.scrollTo(0,2429.60009765625);
@@ -11,69 +12,73 @@ document.getElementById("img-bg").addEventListener("click",()=>{
  document.querySelector('body').style.overflowY = "hidden";
  document.querySelector('body').style.overflowX = "hidden";
  document.getElementById("img-bg").style.display = "none";
+ video.src = "https://www.youtube.com/embed/PH90fl1AXe0?autoplay=1";
 });
 
 document.querySelector('.close').addEventListener("click",()=>{
 
-    document.getElementsByClassName("bg-modal-2")[0].style.display = "none";
+	document.getElementsByClassName("bg-modal-2")[0].style.display = "none";
+	video.src = "https://www.youtube.com/embed/PH90fl1AXe0?autoplay=0";
     location.reload();
 
 });
-// var settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://weather2020-weather-v1.p.rapidapi.com/e8ecee8ff60c478f8a36280fea0524fe/39.0997,94.5783",
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "weather2020-weather-v1.p.rapidapi.com",
-// 		"x-rapidapi-key": "28850fd3d6mshe78a46709e5adb5p14c96djsn43d0d0026abf"
-// 	}
-// }
-$(document).ready(()=>{
+
+//gestion menu
+var btn_menu=document.getElementById("btn_menu");
+var btn_close=document.getElementById("btn_close");
+var menu1=document.getElementById("menu1");
+btn_menu.onclick=function()
+{
 	console.log("hello");
-	// $("#").click(function(){
-		// var key = '9b9fa5c94726d3343029416686d89150';
-		// $.ajax({
-		// 	url:'api.openweathermap.org/data/2.5/find',
-		// 	datatype:'json',
-		// 	type:'GET',
-		// 	data:{q='Safi,MA',appid:key,units:'metric'},
-		// 	success:function(data){
-		// 		console.log(data);
-		// 	}
-		// });
-	// });
-});
+	btn_menu.style.display="none";
+	btn_close.style.display="inline";
+	menu1.style.display="block";
+} 
+btn_close.onclick=function()
+{
+   btn_menu.style.display="block";
+   btn_close.style.display="none";
+   menu1.style.display="none";
 
-// $.ajax(settings).done(function (response) {
-// 	console.log(response);
-// });var settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://weather2020-weather-v1.p.rapidapi.com/e8ecee8ff60c478f8a36280fea0524fe/39.0997,94.5783",
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "weather2020-weather-v1.p.rapidapi.com",
-// 		"x-rapidapi-key": "28850fd3d6mshe78a46709e5adb5p14c96djsn43d0d0026abf"
-// 	}
-// }
+}
+/*slider*/
+let title =  document.getElementsByClassName('title-2')[0];
+let text = document.getElementsByClassName('text-2')[0];
+let slideIndex = 1;
+let image = document.getElementById('img-bg-2');
+var Data = [
 
-// $.ajax(settings).done(function (response) {
-// 	console.log(response);
-// });
-// fetch("https://api.openweathermap.org/data/2.5/find?q=London")
-// .then(response => {
-// 	console.log(response);
-// })
-// .catch(err => {
-// 	console.log(err);
-// });
-// var weather = new XMLHttpRequest();
-// weather.open("GET","http://api.wunderground.com/api/df3f2ab5e1db8f97/conditions/q/PA/Meadville.json",false);
-// weather.send(null);
+    {
+        nom : "Chateau de Mere",
+		text:"dkldfdkldkl",
+		path : "format/img/mere.png",
+    },
+    {
+		nom : "Best plate",
+		text:"dklfjdlkksdks",
+		path : "format/img/plat.png"
+	},
+];
 
-// var r = JSON.parse(weather.response);
-// var dis = "Current location: "+ r.current_observation.display_location.full + "<p>";
-// dis += "Current temp : "+ r.current_observation.temperature_string + "<p>";
-// dis += "current wind speed: "+ r.current_observation.wind_string;
-// console.log(dis);
+  /*slider*/
+Afficher2(slideIndex);
+function Incrementer(n) {
+  slideIndex = slideIndex + n;
+    Afficher2(slideIndex);
+    
+  }
+  function Afficher2(n){
+
+  if (n > Data.length) {slideIndex = 1}
+  else if (n < 1) {slideIndex = Data.length}
+  console.log(n + " " + (slideIndex-1));
+  title.innerText = Data[slideIndex -1].nom;
+  image.src = Data[slideIndex - 1].path;
+  console.log(image);
+
+
+  }
+
+
+
+ 

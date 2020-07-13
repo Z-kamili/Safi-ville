@@ -25,10 +25,10 @@
             
             <h1>SAFI VILLE</h1>
         <nav>
-        <a href="index.php?action=home">Home</a>
-            <a href="#">Fish</a>
+            <a href="index.php?action=home">Home</a>
+            <a class="active" href="index.php?action=sardine">Fish</a>
             <a href="index.php?action=pottery">Pottery</a>
-            <a href="#">Surf</a>
+            <a href="index.php?action=surf">Surf</a>
         </nav>
     </div>
    
@@ -47,7 +47,7 @@
 </div>
 </header>    
 <div class="container container-page">
-    <div class="container-welcome">
+    <div class="container-welcome reveal">
         <p class="big-text"> The Capital Of Sardine</p>
         
 
@@ -56,10 +56,10 @@
 </div>
 <div class="container-page-down">
     <div class="container-page-down-des">
-         <p class="container-page-down--title">Our Best<br>
+         <p class="container-page-down--title reveal">Our Best
             Dishes</p>
          <div class="line"></div>
-         <pre class="desc-text">Sardine is one of the beloved dishes in Morocco,
+         <pre class="desc-text reveal">Sardine is one of the beloved dishes in Morocco,
 especially the city of Safi, which creatively and artfully 
 cooks sardines in different ways, and today we have chosen 
 this dish for you in the way of our restaurant. 
@@ -70,22 +70,15 @@ Visit us to taste this light and delicious food.
     
    <div class="container-page-down-img">
     <div>
-        <div id="img1" class="page-down-img1"></div>
+        <div id="img1" class="page-down-img1 reveal img-hv"></div>
         <div  id="down1" class="page-down-down"></div>
     </div>
     <div>
-        <div id="img2" class="page-down-img2"></div>
-        <div  id="down2" class="page-down-down">
-            <p>SAFI 'Cheouaya'</p>
-            <div class="line"></div>
-            <pre>Number One dish, Grilled  
- Sardine.</pre>
-
-        </div>
+        <div id="img2" class="page-down-img2 reveal img-hv"></div>
 
     </div>
     <div>
-        <div id="img3" class="page-down-img3"></div>
+        <div id="img3" class="page-down-img3 reveal img-hv"></div>
         <div  id="down3" class="page-down-down"></div>
 
     </div>
@@ -105,7 +98,7 @@ Visit us to taste this light and delicious food.
 
 </div>
 
-<div class="container-hills2">
+<div class="container-hills2 reveal">
     <div class="container-hills2-pic">
 
     </div>
@@ -152,13 +145,13 @@ with a variety of influences, each age contributing to the unique attractions in
 
 </div>
 <div class="white-space"></div>
-<div class="container-hills2">
+<div class="container-hills2 reveal">
    
     <div  class="container-hills2-des">
         <h1 class="container-hills2-title">Sardine Restaurant in Safi </h1>
         <div class="line"></div>
         <div class="white-space"></div>
-        <pre class="container-chaaba-text">  Located on the shores of the Atlantic Ocean, Safi has been a vital port 
+        <pre class="container-chaaba-text">Located on the shores of the Atlantic Ocean, Safi has been a vital port 
 for centuries. Originally known as Asfi,the area was inhabited by 
 Carthaginians, Romans and the Almohades over time. Between 1508 and 1541,
 the Portuguese took over rule of Safi. This was then followed by Saadian 
@@ -166,7 +159,7 @@ occupation, which saw the construction of the renowned Grand Mosque.
 After the Saadians came the Alawites. It later came under French control,
 until independence. Thus Safi has a vast and intriguing history, filled 
 with a variety of influences, each age contributing to the unique attractions
-            in the city.</pre>
+in the city.</pre>
 <div class="half-white-space"></div>
         <div class="container-hills2-spot">
 
@@ -199,14 +192,17 @@ with a variety of influences, each age contributing to the unique attractions
 <div class="bg-design2-blue">
 
 </div>
-<div class="Next-destination">
+<div class="Next-destination reveal">
     <h4>Your Next Destination </h4>
     <div class="line" style="margin: auto;"></div>
     <div class="white-space"></div>
     <h1>learn surfing</h1>
     <div class="white-space"></div>
-    <button>Discover</button>
+<button><a class="Discover" href="index.php?action=surf">Discover</a></button>
+
+
 </div>
 <?php include 'include/footer.php'?>
 </body>
+<script src="format/js/animation.js"></script>
 </html>

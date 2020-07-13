@@ -22,20 +22,20 @@
 <!-- Section :  -->
 <main>
 
-    <section class="Welcom-safi">
+    <section class="Welcom-safi ">
 
-        <h1>Welcom To</h1>
-        <div class="title">
+        <h1 class="reveal">Welcom To</h1>
+        <div class="title reveal">
           <h1>SAFI</h1>   
         </div>
-        <p>
+        <p class="reveal">
             Mauris neque nisi, faucibus non elementum in, convallis et eros. Sed pretium sem libero, vel pellentesque purus ultrices ut. In quis leo id massa pulvinar euismod cursus non justo.
         </p>
 
     </section>
     <div class="marg"></div>
     <section class="Galery-Safi">
-<div class="Galery-inf">
+<div class="Galery-inf reveal">
 <h2>Must Discover
     Experiences</h2>
 <div class="border"></div>
@@ -43,21 +43,21 @@
 </div>
 <div class="section">
 <div class="Galery-img">
-<div> <img class="image" src="format/img/images.jpg"></div>
-<div> <img class="image" src="format/img/img1-2.png"></div>
-<div> <img class="image" src="format/img/img1-3.png"></div>
+<div class="reveal reveal-image"> <img class="image" src="format/img/pottery.png"></div>
+<div class="reveal reveal-image"> <img class="image" src="format/img/img1-2.png"></div>
+<div class="reveal reveal-image"> <img class="image" src="format/img/fish.png"></div>
 </div>
 </div>
 
     </section>
     <div class="marg"></div>
-<section class="city-safi">
+<section class="city-safi reveal ">
     <h2>The City</h2>
     <div class="border"></div>
     <p>Located on the shores of the Atlantic Ocean, Safi has been a vital port for centuries. Originally known as Asfi, the area was inhabited by Carthaginians, Romans and the Almohades over time. Between 1508 and 1541, the Portuguese took over rule of Safi. This was then followed by Saadian occupation, which saw the construction of the renowned Grand Mosque. After the Saadians came the Alawites. It later came under French control, until independence. Thus Safi has a vast and intriguing history, filled with a variety of influences, each age contributing to the unique attractions in the city.</p>
 </section>
 <div class="marg"></div>
-<section class="Learn-More">
+<section class="Learn-More reveal">
     <h2>Learn More</h2>
     <div class="border"></div>
     <div class="cards">
@@ -68,7 +68,7 @@
             <!-- <img class="cart-img-top" src="format/img/image2-1.png" alt="Card image cap"> -->
             <div class="cart-body">
                 <h3>Fish</h3>
-              <p class="cart-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="cart-text reveal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <input type="submit" value="Learn More">
           </div>
@@ -79,7 +79,7 @@
             <!-- <img class="cart-img-top" src="format/img/image2-1.png" alt="Card image cap"> -->
             <div class="cart-body">
                 <h3>Surf</h3>
-              <p class="cart-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="cart-text reveal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <input type="submit" value="Learn More">
           </div>
@@ -90,7 +90,7 @@
             <!-- <img class="cart-img-top" src="format/img/image2-1.png" alt="Card image cap"> -->
             <div class="cart-body">
                 <h3>potery</h3>
-              <p class="cart-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="cart-text reveal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <input type="submit" value="Learn More">
           </div>
@@ -113,24 +113,31 @@
     </div>
 </section>
 <div class="marg"></div>
+<section>
+<h1 class="reveal">Safi In Motion</h1>
+<div class="bg-chateau reveal">
+<img class="icon-player-2" id="img-bg" src="format/img/playvideo.png">
+</div>
+</section>
+<div class="marg"></div>
 
 <section>
-  <div class="Safi-video">
-    <div class="bg-image">
-      <img class="icon-player" id="img-bg" src="format/img/playvideo.png">
+  <div class="Safi-video reveal">
+    <div class="bg-image-slider">
+      <img class="icon-player" id="img-bg-2">
     </div>
     <div class="text">
-      <h3>Chateau de Mere</h3>
-      <p>Mauris neque nisi, faucibus non elementum in, convallis et eros. Sed pretium sem libero, vel pellentesque purus ultrices ut,  Sed sagittis et urna non efficitur.Mauris neque nisi, faucibus non elementum in, convallis et eros. Sed pretium sem libero, vel pellentesque purus ultrices ut,  Sed sagittis et urna non efficitur.</p>
+      <h3 class="title-2 reveal">Chateau de Mere</h3>
+      <p class="text-2 reveal">Mauris neque nisi, faucibus non elementum in, convallis et eros. Sed pretium sem libero, vel pellentesque purus ultrices ut,  Sed sagittis et urna non efficitur.Mauris neque nisi, faucibus non elementum in, convallis et eros. Sed pretium sem libero, vel pellentesque purus ultrices ut,  Sed sagittis et urna non efficitur.</p>
       <div class="btn">
-        <input type="submit" class="icon-player" value="<Prev">
-        <input type="submit" value="Next>">
+        <input type="submit" class="icon-player" onclick="Incrementer(-1)" value="<Prev">
+        <input type="submit" onclick="Incrementer(1)" value="Next>">
       </div>
     </div>
   </div>
 </section>
 <div class="marg"></div>
-<section>
+<section class="reveal">
   <h2 class="title">Contact Us</h2>
     <div class="border"></div>
   <div class="Contact">
@@ -162,14 +169,10 @@
  <div class="bg-modal-2">
         <div class="modal-content2">
             <div class="close">+</div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PH90fl1AXe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" id="video"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </body>
-<script src="format/js/main.js">
-// document.getElementsByClassName("icon-player")[0].addEventListener("click",()=>{
-//     console.log("hello");
-//  document.getElementById("bg-modal-2")[0].style.display = "block";
-// });
-</script>
+<script src="format/js/animation.js"></script>
+<script src="format/js/main.js"></script>
 </html>

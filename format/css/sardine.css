@@ -4,7 +4,16 @@
     width: 100%;
     height: 591px;
 }
-
+.Discover{
+  color: white;
+}
+.Discover:hover{
+  color: white;
+}
+.img-hv:hover{
+  transform: scale(1.2);
+  transition: 1s cubic-bezier(.5,0,0,1);
+}
 .bg-design1
 {
   background-image: url("../img/Potterie_img/Potterie_img_whitetopbg.svg") !important;
@@ -12,12 +21,25 @@
   background-position: 50%; 
   color:#fff;
   width:100%;
-
   height:200px;
   font-size: 20px;
   margin-top: -90px;
  
 }
+.active{
+  padding: 5px;
+  font-family: 'Reem Kufi';
+  color: #2D7C92;
+  text-decoration: none;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px); }
+  .reveal-visible{
+    opacity:1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5,0,0,1);
+  }
 .bg-design2
 {
   background-image: url("../img/Potterie_img/bg-design2.svg") !important;
@@ -65,11 +87,15 @@
 .Next-destination h4
 {
   color:#2D7C92;
+  margin: 20px;
 
 }
 .Next-destination h1
 {
   color:#674635;
+  margin: 60px;
+  font-family: 'Claytonia Regular';
+  font-size: 85px;
 
 }
 .Next-destination button
@@ -113,7 +139,7 @@
 }
 .line
 {
-  margin:0;
+  margin:10px 0px;
   width:40px;
   height:2px;
   background-color:#3B8499;
@@ -139,6 +165,7 @@
   display: flex;
   width: 80%;
   margin: auto;
+  justify-content: space-between;
 }
 .page-down-img1
 {
@@ -165,7 +192,7 @@
 }
 .container-page-down-img div
 {
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .page-down-down
 {

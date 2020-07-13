@@ -17,7 +17,9 @@ header .header {
   height: 30px;
   position: absolute;
   top: -3px;
-  left: 128px; }
+  left: 128px;
+  position: fixed;
+  z-index: 2; }
   header .header .div_logo .logo {
     float: right;
     margin-top: 10px;
@@ -35,6 +37,11 @@ header .header {
       font-family: 'Reem Kufi';
       color: black;
       text-decoration: none; }
+    header .header nav .active {
+      padding: 5px;
+      font-family: 'Reem Kufi';
+      color: #2D7C92;
+      text-decoration: none; }
 
 .bg-image {
   background-image: url("../img/bg-header.png");
@@ -44,10 +51,12 @@ header .header {
   margin-top: -10px; }
   .bg-image .image {
     width: 100%;
-    margin-top: 379px; }
+    margin-top: 452px; }
   .bg-image .image1 {
     width: 100%;
-    margin-top: 10px; }
+    margin-top: 10px;
+    position: fixed;
+    z-index: 1; }
   .bg-image .img-header {
     width: 20%;
     margin: auto; }
@@ -65,7 +74,8 @@ header .header {
     height: 30px;
     position: absolute;
     top: -3px;
-    left: 128px; }
+    left: 128px;
+    position: fixed; }
     header .header h1 {
       font-family: 'Claytonia';
       font-size: 27px;
@@ -74,15 +84,16 @@ header .header {
     header .header .div_logo .logo {
       float: right;
       margin-top: 10px;
-      display: block; }
+      display: none; }
+    header .header .div_logo #btn_close {
+      display: none; }
     header .header nav {
-      display: none;
-      background-color: white;
-      width: 33%;
-      position: absolute;
+      width: 35%;
+      /* position: absolute; */
       right: -66px;
-      top: 13px;
-      text-align: center; }
+      /* top: -2px; */
+      text-align: center;
+      margin: 6px 0px; }
       header .header nav a {
         padding: 5px;
         font-family: 'Reem Kufi';
@@ -97,7 +108,7 @@ header .header {
     margin-top: -10px; }
     .bg-image .image {
       width: 100%;
-      margin-top: 379px; }
+      margin-top: 425px; }
     .bg-image .image1 {
       width: 100%;
       margin-top: 10px; }
@@ -117,7 +128,9 @@ header .header {
     height: 45px;
     position: absolute;
     top: -3px;
-    left: 52px; }
+    left: 52px;
+    position: fixed;
+    z-index: 2; }
     header .header h1 {
       font-family: 'Claytonia';
       font-size: 17px;
@@ -127,15 +140,25 @@ header .header {
       float: right;
       margin-top: 5px;
       display: block;
-      width: 15px; }
+      width: 12px; }
+    header .header .div_logo #btn_close {
+      display: none; }
     header .header nav {
+      background-color: white;
+      width: 33%;
+      position: absolute;
+      right: -66px;
+      top: 13px;
+      text-align: center;
       float: right;
-      margin: 15px; }
+      margin: 3px 30px;
+      display: none; }
       header .header nav a {
         padding: 5px;
         font-family: 'Reem Kufi';
         color: black;
-        text-decoration: none; }
+        text-decoration: none;
+        display: block; }
 
   .bg-image {
     background-image: url("../img/bg-header.png");
@@ -145,7 +168,7 @@ header .header {
     margin-top: -10px; }
     .bg-image .image {
       width: 100%;
-      margin-top: 461px; }
+      margin-top: 485px; }
     .bg-image .image1 {
       width: 100%;
       margin-top: 10px; }
@@ -213,7 +236,20 @@ main {
         justify-content: space-between; }
         main .Galery-Safi .section .Galery-img .image {
           width: 90%;
-          height: 400px; }
+          height: 400px;
+          transition: 1s cubic-bezier(0.5, 0, 0, 1); }
+          main .Galery-Safi .section .Galery-img .image:hover {
+            transform: scale(1.2);
+            transition: 1s cubic-bezier(0.5, 0, 0, 1); }
+  main .reveal {
+    opacity: 0;
+    transform: translateY(-30px); }
+  main .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0, 0, 1); }
+  main .reveal-image {
+    width: 80%; }
   main .city-safi {
     text-align: center; }
     main .city-safi p {
@@ -312,7 +348,7 @@ main {
         main .Learn-More .cards .cart-3 .cart-image {
           width: 100%;
           height: 50%;
-          background-image: url("../img/img1.png");
+          background-image: url("../img/pottery.png");
           background-position: center;
           background-size: cover; }
           main .Learn-More .cards .cart-3 .cart-image .icon-player {
@@ -330,6 +366,31 @@ main {
           font-family: "Reem Kufi";
           color: #FFFFFF;
           margin: 2px auto; }
+  main section h1 {
+    text-align: center;
+    font-family: "Claytonia Regular";
+    color: #29819A;
+    font-size: 57px; }
+  main section .bg-chateau {
+    background-image: url("../img/chateau_mere.png");
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 606px;
+    margin: auto; }
+  main section .icon-player-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 104px; }
+  main section .icon-player-2 {
+    cursor: pointer; }
+  main section #img-bg-2 {
+    width: 100%;
+    height: 100%; }
+  main section .bg-image-slider {
+    width: 50%;
+    margin: auto; }
   main section .Safi-video {
     width: 80%;
     margin: auto;
@@ -337,7 +398,7 @@ main {
     main section .Safi-video .bg-image {
       width: 591px;
       height: 437px;
-      background-image: url("../img/videochat.png");
+      background-image: url("../img/chateau_mere.png");
       background-position: center;
       background-size: cover; }
       main section .Safi-video .bg-image .icon-player {
@@ -384,7 +445,7 @@ main {
     main section .Contact .bg-image {
       width: 40%;
       height: 674px;
-      background-image: url("../img/tajine.png");
+      background-image: url("../img/tof.png");
       background-position: center;
       background-size: cover; }
     main section .Contact form {
@@ -499,7 +560,8 @@ footer {
     margin: 30px 0; }
     footer .footer-menu a {
       padding: 10px 10px !important;
-      font-family: "Reem Kufi"; }
+      font-family: "Reem Kufi";
+      color: black; }
     footer .footer-menu .logo {
       font-size: 30px;
       color: #29819A;
@@ -733,6 +795,25 @@ footer {
             font-family: "Reem Kufi";
             color: #FFFFFF;
             margin: 2px auto; }
+    main section h1 {
+      text-align: center;
+      font-family: "Claytonia Regular";
+      color: #29819A;
+      font-size: 40px; }
+    main section .bg-chateau {
+      background-image: url("../img/chateau_mere.png");
+      background-position: center;
+      background-size: cover;
+      width: 80%;
+      height: 354px;
+      margin: auto; }
+    main section .icon-player-2 {
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      width: 44px; }
+    main section .icon-player-2:hover {
+      cursor: pointer; }
     main section .Safi-video {
       width: 80%;
       margin: auto;
@@ -797,7 +878,7 @@ footer {
       main section .Contact .bg-image {
         width: 281px;
         height: 320px;
-        background-image: url("../img/tajine.png");
+        background-image: url("../img/tof.png");
         background-position: center;
         background-size: cover;
         margin: auto; }
@@ -1118,7 +1199,7 @@ footer {
           text-align: center; }
         main section .Safi-video .text .btn {
           margin: auto;
-          width: 100%; }
+          width: 107%; }
           main section .Safi-video .text .btn input {
             width: 46%;
             background-color: #29819A;
@@ -1149,7 +1230,7 @@ footer {
       main section .Contact .bg-image {
         width: 240px;
         height: 320px;
-        background-image: url("../img/tajine.png");
+        background-image: url("../img/tof.png");
         background-position: center;
         background-size: cover;
         margin: auto; }
